@@ -129,11 +129,6 @@
         background-size: cover;
         border-top: 0;
         padding: 20px 50px 30px 50px;
-      }
-      #templateBody,
-      #templateBody p {
-        color: #606060;
-        font-size: 16px;
         text-align: left;
       }
       #templateBody a,
@@ -187,10 +182,20 @@
       .billTitle {
         color: rgb(158, 158, 158);
         line-height: 21px;
+        padding: 5px 0;
       }
       .billInfo {
         font-weight: bold;
         color: black;
+      }
+      .totalBill {
+        font-size: 12px;
+        font-weight: bolder;
+        color: rgb(0, 0, 0);
+        line-height: 28px;
+      }
+      .dashedBorder {
+        border-top: 1px dashed rgb(158, 158, 158);
       }
       @media only screen and (max-width: 480px) {
         body,
@@ -300,7 +305,12 @@
                           </tr>
                           <tr>
                             <td class="billDetail">
-                              <table cellpadding="4" cellspacing="0" width="100%" style="line-height: 1.7;">
+                              <table
+                                cellpadding="4"
+                                cellspacing="0"
+                                width="100%"
+                                style="line-height: 1.7"
+                              >
                                 <tr>
                                   <td>
                                     <span class="grayTitle">Tài xế của bạn </span> <br />
@@ -372,19 +382,19 @@
                                 "
                               >
                                 <tr>
-                                  <td>
+                                  <td style="padding-bottom: 3px">
                                     Bạn trả bằng: <br />
                                     <span class="billInfo">Visa 8959</span>
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td>
+                                  <td style="padding-top: 0">
                                     <table cellpadding="0" cellspacing="0" width="100%">
-                                      <tr>
+                                      <tr class="dashedBorder">
                                         <td class="billTitle">Chi tiết:</td>
                                         <td class="billTitle">Số lượng:</td>
                                       </tr>
-                                      <tr>
+                                      <tr class="dashedBorder">
                                         <td class="dishNameWrapper">
                                           1x
                                           <span class="billInfo"
@@ -392,7 +402,7 @@
                                             gà, sườn, bắc thảo)</span
                                           >
                                         </td>
-                                        <td>VND 55000</td>
+                                        <td>&nbsp&nbspVND 55000</td>
                                       </tr>
                                       <tr>
                                         <td class="dishNameWrapper">
@@ -401,7 +411,7 @@
                                             >Cháo sườn thịt bằm (lớn)</span
                                           >
                                         </td>
-                                        <td>VND 29000</td>
+                                        <td>&nbsp&nbspVND 29000</td>
                                       </tr>
                                       <tr>
                                         <td class="dishNameWrapper">
@@ -410,29 +420,46 @@
                                             >Cháo sườn thịt bằm (nhỏ)</span
                                           >
                                         </td>
-                                        <td>VND 20000</td>
+                                        <td>&nbsp&nbspVND 20000</td>
+                                      </tr>
+                                      <tr>
+                                        <td style="width: 67%; height: 15px"></td>
+                                        <td style="width: 33%; height: 15px"></td>
                                       </tr>
                                       <tr>
                                         <td class="dishNameWrapper">Tổng tạm tính</td>
-                                        <td>VND 104000</td>
+                                        <td>&nbsp&nbspVND 104000</td>
                                       </tr>
                                       <tr>
                                         <td class="dishNameWrapper">
                                           Cước phí giao hàng
                                         </td>
-                                        <td>VND 15000</td>
+                                        <td>&nbsp&nbspVND 15000</td>
                                       </tr>
                                       <tr>
                                         <td class="dishNameWrapper">Phí dịch vụ</td>
-                                        <td>VND 2000</td>
+                                        <td>&nbsp&nbspVND 2000</td>
                                       </tr>
                                       <tr>
-                                        <td class="dishNameWrapper">Khuyến mại</td>
+                                        <td
+                                          class="dishNameWrapper"
+                                          style="padding-bottom: 10px"
+                                        >
+                                          Khuyến mại
+                                        </td>
                                         <td>- VND 50000</td>
                                       </tr>
-                                      <tr>
-                                        <td class="dishNameWrapper">BẠN TRẢ</td>
-                                        <td>VND 71000</td>
+                                      <tr class="dashedBorder">
+                                        <td
+                                          class="dishNameWrapper totalBill"
+                                          style="padding: 10px 10px 0 0;"
+                                          align="right"
+                                        >
+                                          BẠN TRẢ
+                                        </td>
+                                        <td style="padding-top: 10px" class="totalBill">
+                                          &nbsp&nbspVND 71000
+                                        </td>
                                       </tr>
                                     </table>
                                   </td>
