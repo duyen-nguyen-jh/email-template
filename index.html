@@ -40,7 +40,7 @@
       #bodyCell {
         height: 100%;
         margin: 0;
-        padding: 0;
+        padding: 20px 0;
         width: 100%;
       }
       #outlook a {
@@ -98,9 +98,7 @@
         font-weight: inherit !important;
         line-height: inherit !important;
       }
-      #bodyCell {
-        padding-top: 60px;
-      }
+      /* ---------------------------- */
       .templateImage {
         height: auto;
       }
@@ -108,21 +106,10 @@
         max-width: 600px !important;
         border: 1px solid rgb(237, 237, 237) !important;
       }
-      #footerContent {
-        padding-top: 27px;
-        padding-bottom: 18px;
-      }
-      #templateBody,
-      #templateFooter {
-        padding-right: 50px;
-        padding-left: 50px;
-      }
       body,
       #bodyTable {
         background-color: white;
-      }
-      .templateContainer {
-        border: 0;
+        font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
       }
       #templateHeader {
         background-color: #ffffff;
@@ -135,22 +122,18 @@
         padding-bottom: 0;
       }
       #templateBody {
-        background-color: #ffffff;
+        background-color: #f4f4f4;
         background-image: none;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         border-top: 0;
-        border-bottom: 2px solid #eaeaea;
-        padding-top: 0;
-        padding-bottom: 9px;
+        padding: 20px 50px 30px 50px;
       }
       #templateBody,
       #templateBody p {
         color: #606060;
-        font-family: Helvetica;
         font-size: 16px;
-        line-height: 150%;
         text-align: left;
       }
       #templateBody a,
@@ -159,69 +142,55 @@
         font-weight: normal;
         text-decoration: underline;
       }
-      #templateFooter {
-        background-color: #fafafa;
-        background-image: none;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        border-top: 0;
-        border-bottom: 0;
-        padding-top: 36px;
-        padding-bottom: 9px;
+      .halfScreen {
+        width: 44%;
       }
-      #socialBar {
-        background-color: #333333;
-        border: 0;
-        padding: 18px;
+      .horizontalPadding {
+        padding-left: 50px;
+        padding-right: 50px;
       }
-      #socialBar,
-      #socialBar p {
-        color: #ffffff;
-        font-family: Helvetica;
+      #headerContent {
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      .boldText {
         font-size: 12px;
-        line-height: 150%;
-        text-align: center;
+        line-height: 21px;
+        font-weight: bold;
       }
-      #socialBar a,
-      #socialBar p a {
-        color: #ffffff;
-        font-weight: normal;
-        text-decoration: underline;
+      .greenTitle {
+        color: rgb(0, 175, 65);
+        font-weight: bold;
+        text-align: left;
       }
-      #footerContent,
-      #footerContent p {
-        color: #656565;
-        font-family: Helvetica;
+      .orderInfoWrapper {
+        padding-top: 10px;
+      }
+      .grayTitle {
+        font-size: 10px;
+        color: rgb(158, 158, 158);
+        line-height: 14px;
+      }
+      .information {
         font-size: 12px;
-        line-height: 150%;
-        text-align: center;
+        line-height: 16px;
+        font-weight: bold;
       }
-      #footerContent a,
-      #footerContent p a {
-        color: #656565;
-        font-weight: normal;
-        text-decoration: underline;
+      .billDetail {
+        padding-top: 10px;
+        font-size: 11px;
+        font-family: Helvetica, sans-serif;
       }
-      #utilityBar {
-        background-color: #fafafa;
-        border: 0;
-        padding-top: 9px;
-        padding-bottom: 9px;
+      .dishNameWrapper {
+        width: 67%;
       }
-      #utilityBar,
-      #utilityBar p {
-        color: #656565;
-        font-family: Helvetica;
-        font-size: 12px;
-        line-height: 150%;
-        text-align: center;
+      .billTitle {
+        color: rgb(158, 158, 158);
+        line-height: 21px;
       }
-      #utilityBar a,
-      #utilityBar p a {
-        color: #656565;
-        font-weight: normal;
-        text-decoration: underline;
+      .billInfo {
+        font-weight: bold;
+        color: black;
       }
       @media only screen and (max-width: 480px) {
         body,
@@ -233,8 +202,6 @@
         blockquote {
           -webkit-text-size-adjust: none !important;
         }
-      }
-      @media only screen and (max-width: 480px) {
         body {
           width: 100% !important;
           min-width: 100% !important;
@@ -245,29 +212,9 @@
         .mobileHide {
           display: none;
         }
-        .utilityLink {
-          display: block;
-          padding: 9px 0;
-        }
         #templateBody,
         #templateBody p {
           font-size: 16px !important;
-          line-height: 150% !important;
-        }
-        #templateFooter,
-        #templateFooter p {
-          font-size: 14px !important;
-          line-height: 150% !important;
-        }
-        #utilityBar,
-        #utilityBar p {
-          font-size: 14px !important;
-          line-height: 150% !important;
-        }
-        #socialBar,
-        #socialBar p {
-          font-size: 14px !important;
-          line-height: 150% !important;
         }
       }
     </style>
@@ -287,7 +234,7 @@
         <tr>
           <td align="center" valign="top" id="bodyCell">
             <table cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
-              <!-- BEGIN HEADER // -->
+              <!-- ------------------------------- HEADER---------------------------------- // -->
               <tr>
                 <td valign="top" id="templateHeader">
                   <img
@@ -297,80 +244,107 @@
                   />
                 </td>
               </tr>
-              <!-- BEGIN BODY // -->
+              <tr>
+                <td valign="top" id="headerContent">
+                  <table cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td valign="top" style="padding-top: 15px; padding-bottom: 6px">
+                        <span
+                          class="greenTitle"
+                          style="
+                            font-family: Helvetica, 'Arial', sans-serif;
+                            line-height: 26px;
+                            font-size: 20px;
+                          "
+                        >
+                          Chúc bạn ngon miệng!
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="top" style="padding-bottom: 15px; padding-top: 6px">
+                        <table cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td class="halfScreen boldText">
+                              Tổng cộng <br />
+                              <span
+                                class="greenTitle"
+                                style="font-size: 28px; line-height: 32px"
+                                >VND 71000</span
+                              >
+                            </td>
+                            <td class="boldText">
+                              Ngày | Giờ <br />
+                              <span style="font-size: 18px" class="greenTitle"
+                                >24 Jun 21 12:28 +0700</span
+                              >
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!------------------------------------BODY --------------------------------------->
               <tr>
                 <td valign="top" id="templateBody">
                   <table cellpadding="0" cellspacing="0" width="100%">
                     <tr>
-                      <td><span> Chúc bạn ngon miệng! </span></td>
-                    </tr>
-                    <tr>
-                      <td>
+                      <td class="halfScreen" valign="top">
                         <table cellpadding="0" cellspacing="0" width="100%">
                           <tr>
-                            <td class="halfSceen">
-                              Tổng cộng <br />
-                              <span>VND 71000</span>
-                            </td>
-                            <td>
-                              Ngày | Giờ <br />
-                              <span>24 Jun 21 12:28 +0700</span>
+                            <td class="greenTitle" style="font-size: 14px">
+                              CHI TIẾT ĐẶT XE
                             </td>
                           </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                  <table cellpadding="0" cellspacing="0" width="100%">
-                    <tr>
-                      <td class="halfSceen">
-                        <table cellpadding="0" cellspacing="0" width="100%">
                           <tr>
-                            <td>CHI TIẾT ĐẶT XE</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <table cellpadding="0" cellspacing="0" width="100%">
+                            <td class="billDetail">
+                              <table cellpadding="4" cellspacing="0" width="100%" style="line-height: 1.7;">
                                 <tr>
                                   <td>
-                                    <span>Tài xế của bạn </span> <br />
-                                    <span>Nguyễn Thanh Tiền (GB)</span>
+                                    <span class="grayTitle">Tài xế của bạn </span> <br />
+                                    <span class="information"
+                                      >Nguyễn Thanh Tiền (GB)</span
+                                    >
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <span>Người dùng </span> <br />
-                                    <span>Chu Nguyễn Anh Tuấn</span>
+                                    <span class="grayTitle">Người dùng </span> <br />
+                                    <span class="information">Chu Nguyễn Anh Tuấn</span>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <span>Mã đặt xe</span> <br />
-                                    <span>A-25HLEPCWWIK5</span>
+                                    <span class="grayTitle">Mã đặt xe</span> <br />
+                                    <span class="information">A-25HLEPCWWIK5</span>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <span>Điểm đón khách: </span> <br />
-                                    <span>Cháo Sườn Cô Giang - Phùng Văn Cung</span>
+                                    <span class="grayTitle">Điểm đón khách: </span> <br />
+                                    <span class="information"
+                                      >Cháo Sườn Cô Giang - Phùng Văn Cung</span
+                                    >
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <span>Điểm trả khách:</span> <br />
-                                    <span>Home</span>
+                                    <span class="grayTitle">Điểm trả khách:</span> <br />
+                                    <span class="information">Home</span>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <span>Hồ sơ:</span> <br />
-                                    <span>Personal</span>
+                                    <span class="grayTitle">Hồ sơ:</span> <br />
+                                    <span class="information">Personal</span>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <span>Điểm được nhận:</span> <br />
-                                    <span>+7 điểm</span>
+                                    <span class="grayTitle">Điểm được nhận:</span> <br />
+                                    <span class="information">+7 điểm</span>
                                   </td>
                                 </tr>
                               </table>
@@ -378,62 +352,90 @@
                           </tr>
                         </table>
                       </td>
-                      <td>
+                      <td valign="top">
                         <table cellpadding="0" cellspacing="0" width="100%">
                           <tr>
-                            <td>HÓA ĐƠN CỦA BẠN</td>
+                            <td class="greenTitle" style="font-size: 14px">
+                              HÓA ĐƠN CỦA BẠN
+                            </td>
                           </tr>
                           <tr>
-                            <td>
-                              <table>
+                            <td class="billDetail">
+                              <table
+                                cellpadding="10"
+                                cellspacing="0"
+                                width="100%"
+                                style="
+                                  border: 1px solid rgb(221, 221, 221);
+                                  background-color: white;
+                                  line-height: 2;
+                                "
+                              >
                                 <tr>
                                   <td>
                                     Bạn trả bằng: <br />
-                                    <span>Visa 8959</span>
+                                    <span class="billInfo">Visa 8959</span>
                                   </td>
                                 </tr>
                                 <tr>
-                                  <table>
-                                    <tr>
-                                      <td>Chi tiết</td>
-                                      <td>Số lượng</td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        1x Combo 4 : Cháo sườn thập cẩm (bò viên, trứng
-                                        gà, sườn, bắc thảo)
-                                      </td>
-                                      <td>VND 55000</td>
-                                    </tr>
-                                    <tr>
-                                      <td>1x Cháo sườn thịt bằm (lớn)</td>
-                                      <td>VND 29000</td>
-                                    </tr>
-                                    <tr>
-                                      <td>1x Cháo sườn thịt bằm (nhỏ)</td>
-                                      <td>VND 20000</td>
-                                    </tr>
-                                    <tr>
-                                      <td>Tổng tạm tính</td>
-                                      <td>VND 104000</td>
-                                    </tr>
-                                    <tr>
-                                      <td>Cước phí giao hàng</td>
-                                      <td>VND 15000</td>
-                                    </tr>
-                                    <tr>
-                                      <td>Phí dịch vụ</td>
-                                      <td>VND 2000</td>
-                                    </tr>
-                                    <tr>
-                                      <td>Khuyến mại</td>
-                                      <td>- VND 50000</td>
-                                    </tr>
-                                    <tr>
-                                      <td>BẠN TRẢ</td>
-                                      <td>VND 71000</td>
-                                    </tr>
-                                  </table>
+                                  <td>
+                                    <table cellpadding="0" cellspacing="0" width="100%">
+                                      <tr>
+                                        <td class="billTitle">Chi tiết:</td>
+                                        <td class="billTitle">Số lượng:</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="dishNameWrapper">
+                                          1x
+                                          <span class="billInfo"
+                                            >Combo 4 : Cháo sườn thập cẩm (bò viên, trứng
+                                            gà, sườn, bắc thảo)</span
+                                          >
+                                        </td>
+                                        <td>VND 55000</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="dishNameWrapper">
+                                          1x
+                                          <span class="billInfo"
+                                            >Cháo sườn thịt bằm (lớn)</span
+                                          >
+                                        </td>
+                                        <td>VND 29000</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="dishNameWrapper">
+                                          1x
+                                          <span class="billInfo"
+                                            >Cháo sườn thịt bằm (nhỏ)</span
+                                          >
+                                        </td>
+                                        <td>VND 20000</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="dishNameWrapper">Tổng tạm tính</td>
+                                        <td>VND 104000</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="dishNameWrapper">
+                                          Cước phí giao hàng
+                                        </td>
+                                        <td>VND 15000</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="dishNameWrapper">Phí dịch vụ</td>
+                                        <td>VND 2000</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="dishNameWrapper">Khuyến mại</td>
+                                        <td>- VND 50000</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="dishNameWrapper">BẠN TRẢ</td>
+                                        <td>VND 71000</td>
+                                      </tr>
+                                    </table>
+                                  </td>
                                 </tr>
                               </table>
                             </td>
@@ -441,22 +443,133 @@
                         </table>
                       </td>
                     </tr>
-                    <tr></tr>
                   </table>
                 </td>
               </tr>
-              <!-- BEGIN FOOTER // -->
+              <!-- --------------------------------FOOTER----------------------------- -->
               <tr>
-                <td valign="top" id="templateFooter">
-                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <td style="padding: 0 5px; background-color: #f4f4f4">
+                  <table>
                     <tr>
-                      <td valign="top" id="socialBar"></td>
+                      <td>
+                        <a href="https://i.im.ge/2022/01/09/X1e7Ny.png"
+                          ><img
+                            src="https://i.im.ge/2022/01/09/X1e7Ny.png"
+                            alt="X1eoSm.png"
+                            border="0"
+                            width="100%"
+                        /></a>
+                      </td>
                     </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- -------------------------------SUB-FOOTER----------------------- -->
+              <tr>
+                <td
+                  valign="top"
+                  class="horizontalPadding"
+                  style="
+                    border-bottom: 1px solid #cbcbcb;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                  "
+                >
+                  <table cellpadding="0" cellspacing="0" width="100%">
                     <tr>
-                      <td valign="top" id="footerContent"></td>
+                      <td valign="top">
+                        <table cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td valign="top" align="right" width="25%">
+                              <img
+                                src="https://i.im.ge/2022/01/09/X1ey54.png"
+                                alt="invoice"
+                                width="32px"
+                              />
+                            </td>
+                            <td>
+                              <table cellpadding="0" cellspacing="0">
+                                <tr>
+                                  <td>quản lý hiệu quả</td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    Đánh dấu chuyến đi của bạn là Cá Nhân hoặc Công việc
+                                    trên ứng dụng Grab để quản lý hóa đơn điện tử khi đăng
+                                    nhập vào grab.com/work
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
                     </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- ------------------------FOOTER-------------------- -->
+              <tr>
+                <td
+                  class="horizontalPadding"
+                  style="padding-top: 20px; padding-bottom: 30px"
+                >
+                  <table cellpadding="0" cellspacing="0">
                     <tr>
-                      <td valign="top" id="utilityBar"></td>
+                      <td>
+                        <table cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td>
+                              <a
+                                href="https://help.grab.com/passenger/vi-vn/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >Help Center</a
+                              ><br /><a
+                                href="https://help.grab.com/passenger/vi-vn/articles/115005446908"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                Bạn để quên đồ trên chuyến xe này?</a
+                              >
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              Copyright @ 2021 GrabTaxi Holdings Pte. Ltd. <br />
+                              All rights reserved.
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td>
+                        <table cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td>Giữ liên lạc với chúng tôi nhé</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <img
+                                src="https://i.im.ge/2022/01/09/X2Qn0z.png"
+                                alt="facebook"
+                                width="32px"
+                              /><img
+                                src="https://i.im.ge/2022/01/09/X2QGMF.png"
+                                alt="twitter"
+                                width="32px"
+                              /><img
+                                src="https://i.im.ge/2022/01/09/X2Q4g6.png"
+                                alt="instagram"
+                                width="32px"
+                              /><img
+                                src="https://i.im.ge/2022/01/09/X2QeDK.png"
+                                alt="linkedin"
+                                width="32px"
+                              />
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
                     </tr>
                   </table>
                 </td>
