@@ -11,154 +11,6 @@
     <title>*|MC:SUBJECT|*</title>
 
     <style type="text/css">
-      /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap'); */
-
-      p, pre {
-        margin: 0;
-        padding: 0;
-      }
-      table {
-        border-collapse: collapse;
-      }
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        display: block;
-        margin: 0;
-        padding: 0;
-      }
-      img,
-      a img {
-        border: 0;
-        height: auto;
-        outline: none;
-        text-decoration: none;
-      }
-      body,
-      #bodyTable,
-      #bodyCell {
-        height: 100%;
-        margin: 0;
-        padding: 20px 0;
-        width: 100%;
-      }
-      /* ---------------------------- */
-      .templateImage {
-        height: auto;
-      }
-      .templateContainer {
-        max-width: 600px !important;
-        border: 1px solid rgb(237, 237, 237) !important;
-      }
-      body,
-      #bodyTable,
-      pre {
-        background-color: white;
-        font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
-      }
-      #templateHeader {
-        background-color: #ffffff;
-        background-image: none;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        border-top: 0;
-        border-bottom: 0;
-        padding-bottom: 0;
-      }
-      #templateBody {
-        background-color: #f4f4f4;
-        background-image: none;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        border-top: 0;
-        padding: 20px 50px 30px 50px;
-        text-align: left;
-      }
-      .halfScreen {
-        width: 44%;
-      }
-      .horizontalPadding {
-        padding-left: 50px;
-        padding-right: 50px;
-      }
-      #headerContent {
-        padding-left: 50px;
-        padding-right: 50px;
-      }
-      .boldText {
-        font-size: 12px;
-        line-height: 21px;
-        font-weight: bold;
-      }
-      .greenTitle {
-        color: rgb(0, 175, 65);
-        font-weight: bold;
-        text-align: left;
-      }
-      .orderInfoWrapper {
-        padding-top: 10px;
-      }
-      .grayTitle {
-        font-size: 10px;
-        color: rgb(158, 158, 158);
-        line-height: 14px;
-      }
-      .information {
-        font-size: 12px;
-        line-height: 16px;
-        font-weight: bold;
-      }
-      .billDetail {
-        padding-top: 10px;
-        font-size: 11px;
-        font-family: Helvetica, sans-serif;
-      }
-      .dishNameWrapper {
-        width: 67%;
-        line-height: 18px;
-      }
-      .billTitle {
-        color: rgb(158, 158, 158);
-        line-height: 21px;
-        padding: 5px 0;
-      }
-      .billInfo {
-        font-weight: bold;
-        color: black;
-      }
-      .totalBill {
-        font-size: 12px;
-        font-weight: bolder;
-        color: rgb(0, 0, 0);
-        line-height: 28px;
-      }
-      .dashedBorder {
-        border-top: 1px dashed rgb(158, 158, 158);
-      }
-      .templateFooter {
-        color: rgb(102, 102, 102) !important;
-        font-size: 10px;
-        line-height: 1.5;
-        font-family: Helvetica, sans-serif;
-      }
-      .graySubtextFooter {
-        font-weight: normal;
-        line-height: 16px;
-      }
-      .templateFooter a {
-        line-height: 12px;
-        font-weight: bold;
-        text-decoration: underline;
-      }
-      #iconWrapper img {
-        width: 32px;
-        padding-right: 8px;
-      }
       @media only screen and (max-width: 480px) {
         body,
         table,
@@ -194,7 +46,7 @@
     </style>
   </head>
 
-  <body>
+  <body style="font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif">
     <center>
       <table
         align="center"
@@ -204,13 +56,36 @@
         height="100%"
         width="100%"
         id="bodyTable"
+        style="
+          border-collapse: collapse;
+          height: 100%;
+          margin: 0;
+          padding: 20px 0;
+          width: 100%;
+          background-color: white;
+          font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+        "
       >
         <tr>
           <td align="center" valign="top" id="bodyCell">
-            <table cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
+            <table
+              cellpadding="0"
+              cellspacing="0"
+              width="100%"
+              class="templateContainer"
+              style="
+                max-width: 600px;
+                border: 1px solid rgb(237, 237, 237);
+                border-collapse: collapse;
+              "
+            >
               <!-- ------------------------------- HEADER---------------------------------- // -->
               <tr>
-                <td valign="top" id="templateHeader">
+                <td
+                  valign="top"
+                  id="templateHeader"
+                  style="border-bottom: 0; padding-bottom: 0"
+                >
                   <img
                     src="https://i.im.ge/2022/01/08/X1Zrd9.png"
                     class="templateImage"
@@ -219,16 +94,27 @@
                 </td>
               </tr>
               <tr>
-                <td valign="top" id="headerContent">
-                  <table cellpadding="0" cellspacing="0" width="100%">
+                <td
+                  valign="top"
+                  id="headerContent"
+                  style="padding-left: 50px; padding-right: 50px"
+                >
+                  <table
+                    cellpadding="0"
+                    cellspacing="0"
+                    width="100%"
+                    style="border-collapse: collapse"
+                  >
                     <tr>
                       <td valign="top" style="padding-top: 15px; padding-bottom: 6px">
                         <span
-                          class="greenTitle"
                           style="
                             font-family: Helvetica, 'Arial', sans-serif;
                             line-height: 26px;
                             font-size: 20px;
+                            color: rgb(0, 175, 65);
+                            font-weight: bold;
+                            text-align: left;
                           "
                         >
                           Chúc bạn ngon miệng!
@@ -237,19 +123,50 @@
                     </tr>
                     <tr>
                       <td valign="top" style="padding-bottom: 15px; padding-top: 6px">
-                        <table cellpadding="0" cellspacing="0" width="100%">
+                        <table
+                          cellpadding="0"
+                          cellspacing="0"
+                          width="100%"
+                          style="border-collapse: collapse"
+                        >
                           <tr>
-                            <td class="halfScreen boldText mobileFlex">
+                            <td
+                              class="mobileFlex halfScreen"
+                              style="
+                                width: 44%;
+                                font-size: 12px;
+                                line-height: 21px;
+                                font-weight: bold;
+                              "
+                            >
                               Tổng cộng <br />
                               <span
-                                class="greenTitle"
-                                style="font-size: 28px; line-height: 32px"
+                                style="
+                                  font-size: 28px;
+                                  line-height: 32px;
+                                  color: rgb(0, 175, 65);
+                                  font-weight: bold;
+                                  text-align: left;
+                                "
                                 >VND 71000</span
                               >
                             </td>
-                            <td class="boldText mobileFlex">
+                            <td
+                              class="mobileFlex"
+                              style="
+                                font-size: 12px;
+                                line-height: 21px;
+                                font-weight: bold;
+                              "
+                            >
                               Ngày | Giờ <br />
-                              <span style="font-size: 18px" class="greenTitle"
+                              <span
+                                style="
+                                  font-size: 18px;
+                                  color: rgb(0, 175, 65);
+                                  font-weight: bold;
+                                  text-align: left;
+                                "
                                 >24 Jun 21 12:28 +0700</span
                               >
                             </td>
@@ -262,68 +179,203 @@
               </tr>
               <!------------------------------------BODY --------------------------------------->
               <tr>
-                <td valign="top" id="templateBody">
-                  <table cellpadding="0" cellspacing="0" width="100%">
+                <td
+                  valign="top"
+                  id="templateBody"
+                  style="
+                    background-color: #f4f4f4;
+                    border-top: 0;
+                    padding: 20px 50px 30px 50px;
+                    text-align: left;
+                  "
+                >
+                  <table
+                    cellpadding="0"
+                    cellspacing="0"
+                    width="100%"
+                    style="border-collapse: collapse"
+                  >
                     <tr>
-                      <td class="halfScreen mobileFlex" valign="top">
+                      <td class="mobileFlex halfScreen" valign="top" style="width: 44%">
                         <table cellpadding="0" cellspacing="0" width="100%">
                           <tr>
-                            <td class="greenTitle" style="font-size: 14px">
+                            <td
+                              style="
+                                font-size: 14px;
+                                color: rgb(0, 175, 65);
+                                font-weight: bold;
+                                text-align: left;
+                              "
+                            >
                               CHI TIẾT ĐẶT XE
                             </td>
                           </tr>
                           <tr>
-                            <td class="billDetail">
+                            <td
+                              style="
+                                padding-top: 10px;
+                                font-size: 11px;
+                                font-family: Helvetica, sans-serif;
+                              "
+                            >
                               <table
                                 cellpadding="4"
                                 cellspacing="0"
                                 width="100%"
-                                style="line-height: 1.7"
+                                style="line-height: 1.7; border-collapse: collapse"
                               >
                                 <tr>
                                   <td>
-                                    <span class="grayTitle">Tài xế của bạn </span> <br />
-                                    <span class="information"
+                                    <span
+                                      style="
+                                        font-size: 10px;
+                                        color: rgb(158, 158, 158);
+                                        line-height: 14px;
+                                      "
+                                      >Tài xế của bạn
+                                    </span>
+                                    <br />
+                                    <span
+                                      style="
+                                        font-size: 12px;
+                                        line-height: 16px;
+                                        font-weight: bold;
+                                        color: black;
+                                      "
                                       >Nguyễn Thanh Tiền (GB)</span
                                     >
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <span class="grayTitle">Người dùng </span> <br />
-                                    <span class="information">Chu Nguyễn Anh Tuấn</span>
+                                    <span
+                                      style="
+                                        font-size: 10px;
+                                        color: rgb(158, 158, 158);
+                                        line-height: 14px;
+                                      "
+                                      >Người dùng
+                                    </span>
+                                    <br />
+                                    <span
+                                      style="
+                                        font-size: 12px;
+                                        line-height: 16px;
+                                        font-weight: bold;
+                                        color: black;
+                                      "
+                                      >Chu Nguyễn Anh Tuấn</span
+                                    >
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <span class="grayTitle">Mã đặt xe</span> <br />
-                                    <span class="information">A-25HLEPCWWIK5</span>
+                                    <span
+                                      style="
+                                        font-size: 10px;
+                                        color: rgb(158, 158, 158);
+                                        line-height: 14px;
+                                      "
+                                      >Mã đặt xe</span
+                                    >
+                                    <br />
+                                    <span
+                                      style="
+                                        font-size: 12px;
+                                        line-height: 16px;
+                                        font-weight: bold;
+                                        color: black;
+                                      "
+                                      >A-25HLEPCWWIK5</span
+                                    >
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <span class="grayTitle">Điểm đón khách: </span> <br />
-                                    <span class="information"
+                                    <span
+                                      style="
+                                        font-size: 10px;
+                                        color: rgb(158, 158, 158);
+                                        line-height: 14px;
+                                      "
+                                      >Điểm đón khách:
+                                    </span>
+                                    <br />
+                                    <span
+                                      style="
+                                        font-size: 12px;
+                                        line-height: 16px;
+                                        font-weight: bold;
+                                        color: black;
+                                      "
                                       >Cháo Sườn Cô Giang - Phùng Văn Cung</span
                                     >
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <span class="grayTitle">Điểm trả khách:</span> <br />
-                                    <span class="information">Home</span>
+                                    <span
+                                      style="
+                                        font-size: 10px;
+                                        color: rgb(158, 158, 158);
+                                        line-height: 14px;
+                                      "
+                                      >Điểm trả khách:</span
+                                    >
+                                    <br />
+                                    <span
+                                      style="
+                                        font-size: 12px;
+                                        line-height: 16px;
+                                        font-weight: bold;
+                                        color: black;
+                                      "
+                                      >Home</span
+                                    >
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <span class="grayTitle">Hồ sơ:</span> <br />
-                                    <span class="information">Personal</span>
+                                    <span
+                                      style="
+                                        font-size: 10px;
+                                        color: rgb(158, 158, 158);
+                                        line-height: 14px;
+                                      "
+                                      >Hồ sơ:</span
+                                    >
+                                    <br />
+                                    <span
+                                      style="
+                                        font-size: 12px;
+                                        line-height: 16px;
+                                        font-weight: bold;
+                                        color: black;
+                                      "
+                                      >Personal</span
+                                    >
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <span class="grayTitle">Điểm được nhận:</span> <br />
-                                    <span class="information">+7 điểm</span>
+                                    <span
+                                      style="
+                                        font-size: 10px;
+                                        color: rgb(158, 158, 158);
+                                        line-height: 14px;
+                                      "
+                                      >Điểm được nhận:</span
+                                    >
+                                    <br />
+                                    <span
+                                      style="
+                                        font-size: 12px;
+                                        line-height: 16px;
+                                        font-weight: bold;
+                                        color: black;
+                                      "
+                                      >+7 điểm</span
+                                    >
                                   </td>
                                 </tr>
                               </table>
@@ -332,14 +384,32 @@
                         </table>
                       </td>
                       <td valign="top" class="mobileFlex">
-                        <table cellpadding="0" cellspacing="0" width="100%">
+                        <table
+                          cellpadding="0"
+                          cellspacing="0"
+                          width="100%"
+                          style="border-collapse: collapse"
+                        >
                           <tr>
-                            <td class="greenTitle" style="font-size: 14px">
+                            <td
+                              style="
+                                font-size: 14px;
+                                color: rgb(0, 175, 65);
+                                font-weight: bold;
+                                text-align: left;
+                              "
+                            >
                               HÓA ĐƠN CỦA BẠN
                             </td>
                           </tr>
                           <tr>
-                            <td class="billDetail">
+                            <td
+                              style="
+                                padding-top: 10px;
+                                font-size: 11px;
+                                font-family: Helvetica, sans-serif;
+                              "
+                            >
                               <table
                                 cellpadding="10"
                                 cellspacing="0"
@@ -348,91 +418,211 @@
                                   border: 1px solid rgb(221, 221, 221);
                                   background-color: white;
                                   line-height: 1.5;
+                                  border-collapse: collapse;
                                 "
                               >
                                 <tr>
                                   <td style="padding-bottom: 10px">
-                                    Bạn trả bằng: 
+                                    Bạn trả bằng:
                                     <br />
-                                    <span class="billInfo">Visa 8959</span>
+                                    <span style="font-weight: bold; color: black"
+                                      >Visa 8959</span
+                                    >
                                   </td>
                                 </tr>
                                 <tr>
                                   <td style="padding-top: 0">
-                                    <table cellpadding="0" cellspacing="0" width="100%">
-                                      <tr class="dashedBorder">
-                                        <td class="billTitle">Chi tiết:</td>
-                                        <td class="billTitle">Số lượng:</td>
-                                      </tr>
-                                      <tr class="dashedBorder">
+                                    <table
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      width="100%"
+                                      style="border-collapse: collapse"
+                                    >
+                                      <tr
+                                        style="border-top: 1px dashed rgb(158, 158, 158)"
+                                      >
                                         <td
-                                          class="dishNameWrapper"
-                                          style="padding-top: 5px"
+                                          style="
+                                            color: rgb(158, 158, 158);
+                                            line-height: 21px;
+                                            padding: 5px 0;
+                                          "
+                                        >
+                                          Chi tiết:
+                                        </td>
+                                        <td
+                                          style="
+                                            color: rgb(158, 158, 158);
+                                            line-height: 21px;
+                                            padding: 5px 0;
+                                          "
+                                        >
+                                          Số lượng:
+                                        </td>
+                                      </tr>
+                                      <tr
+                                        style="border-top: 1px dashed rgb(158, 158, 158)"
+                                      >
+                                        <td
+                                          style="
+                                            padding-top: 5px;
+                                            width: 67%;
+                                            line-height: 18px;
+                                          "
                                         >
                                           1x
-                                          <span class="billInfo"
+                                          <span style="font-weight: bold; color: black"
                                             >Combo 4 : Cháo sườn thập cẩm (bò viên, trứng
                                             gà, sườn, bắc thảo)</span
                                           >
                                         </td>
-                                        <td><pre>  VND 55000</pre></td>
+                                        <td>
+                                          <pre
+                                            style="
+                                              font-family: Roboto, RobotoDraft, Helvetica,
+                                                Arial, sans-serif;
+                                              padding: 0;
+                                            "
+                                          >
+  VND 55000</pre
+                                          >
+                                        </td>
                                       </tr>
                                       <tr>
-                                        <td class="dishNameWrapper">
+                                        <td style="width: 67%; line-height: 18px">
                                           1x
-                                          <span class="billInfo"
+                                          <span style="font-weight: bold; color: black"
                                             >Cháo sườn thịt bằm (lớn)</span
                                           >
                                         </td>
-                                        <td><pre>  VND 29000</pre></td>
+                                        <td>
+                                          <pre
+                                            style="
+                                              font-family: Roboto, RobotoDraft, Helvetica,
+                                                Arial, sans-serif;
+                                              padding: 0;
+                                            "
+                                          >
+  VND 29000</pre
+                                          >
+                                        </td>
                                       </tr>
                                       <tr>
-                                        <td class="dishNameWrapper">
+                                        <td style="width: 67%; line-height: 18px">
                                           1x
-                                          <span class="billInfo"
+                                          <span style="font-weight: bold; color: black"
                                             >Cháo sườn thịt bằm (nhỏ)</span
                                           >
                                         </td>
-                                        <td><pre>  VND 20000</pre></td>
+                                        <td>
+                                          <pre
+                                            style="
+                                              font-family: Roboto, RobotoDraft, Helvetica,
+                                                Arial, sans-serif;
+                                              padding: 0;
+                                            "
+                                          >
+  VND 20000</pre
+                                          >
+                                        </td>
                                       </tr>
                                       <tr>
                                         <td style="width: 67%; height: 15px"></td>
                                         <td style="width: 33%; height: 15px"></td>
                                       </tr>
                                       <tr>
-                                        <td class="dishNameWrapper">Tổng tạm tính</td>
-                                        <td><pre>  VND 104000</pre></td>
+                                        <td style="width: 67%; line-height: 18px">
+                                          Tổng tạm tính
+                                        </td>
+                                        <td>
+                                          <pre
+                                            style="
+                                              font-family: Roboto, RobotoDraft, Helvetica,
+                                                Arial, sans-serif;
+                                              padding: 0;
+                                            "
+                                          >
+  VND 104000</pre
+                                          >
+                                        </td>
                                       </tr>
                                       <tr>
-                                        <td class="dishNameWrapper">
+                                        <td style="width: 67%; line-height: 18px">
                                           Cước phí giao hàng
                                         </td>
                                         <td>
-                                          <pre>  VND 15000</pre>
+                                          <pre
+                                            style="
+                                              font-family: Roboto, RobotoDraft, Helvetica,
+                                                Arial, sans-serif;
+                                              padding: 0;
+                                            "
+                                          >
+  VND 15000</pre
+                                          >
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td class="dishNameWrapper">Phí dịch vụ</td>
-                                        <td><pre>  VND 2000</pre></td>
+                                        <td style="width: 67%; line-height: 18px">
+                                          Phí dịch vụ
+                                        </td>
+                                        <td>
+                                          <pre
+                                            style="
+                                              font-family: Roboto, RobotoDraft, Helvetica,
+                                                Arial, sans-serif;
+                                              padding: 0;
+                                            "
+                                          >
+  VND 2000</pre
+                                          >
+                                        </td>
                                       </tr>
                                       <tr>
                                         <td
-                                          class="dishNameWrapper"
-                                          style="padding-bottom: 10px"
+                                          style="
+                                            padding-bottom: 10px;
+                                            width: 67%;
+                                            line-height: 18px;
+                                          "
                                         >
                                           Khuyến mại
                                         </td>
                                         <td>- VND 50000</td>
                                       </tr>
-                                      <tr class="dashedBorder">
+                                      <tr
+                                        style="border-top: 1px dashed rgb(158, 158, 158)"
+                                      >
                                         <td
-                                          class="dishNameWrapper totalBill"
                                           align="right"
+                                          style="
+                                            width: 67%;
+                                            line-height: 18px;
+                                            font-size: 12px;
+                                            font-weight: bolder;
+                                            color: rgb(0, 0, 0);
+                                            line-height: 28px;
+                                          "
                                         >
                                           BẠN TRẢ
                                         </td>
-                                        <td class="totalBill">
-                                          <pre>  VND 71000</pre>
+                                        <td
+                                          style="
+                                            font-size: 12px;
+                                            font-weight: bolder;
+                                            color: rgb(0, 0, 0);
+                                            line-height: 28px;
+                                          "
+                                        >
+                                          <pre
+                                            style="
+                                              font-family: Roboto, RobotoDraft, Helvetica,
+                                                Arial, sans-serif;
+                                              padding: 0;
+                                            "
+                                          >
+  VND 71000</pre
+                                          >
                                         </td>
                                       </tr>
                                     </table>
@@ -449,7 +639,12 @@
               </tr>
               <tr>
                 <td style="padding: 0 5px; background-color: #f4f4f4">
-                  <table cellpadding="0" cellspacing="0" width="100%">
+                  <table
+                    cellpadding="0"
+                    cellspacing="0"
+                    width="100%"
+                    style="border-collapse: collapse"
+                  >
                     <tr>
                       <td>
                         <a href="https://i.im.ge/2022/01/09/X1e7Ny.png"
@@ -468,40 +663,62 @@
               <tr>
                 <td
                   valign="top"
-                  class="horizontalPadding templateFooter"
                   style="
                     border-bottom: 1px solid #cbcbcb;
-                    padding-top: 20px;
-                    padding-bottom: 20px;
+                    padding: 20px 50px;
+                    border-collapse: collapse;
+                    color: rgb(102, 102, 102) !important;
+                    font-size: 10px;
+                    line-height: 1.5;
+                    font-family: Helvetica, sans-serif;
                   "
                 >
-                  <table cellpadding="0" cellspacing="0" width="100%">
+                  <table
+                    cellpadding="0"
+                    cellspacing="0"
+                    width="100%"
+                    style="border-collapse: collapse"
+                  >
                     <tr>
                       <td valign="top">
-                        <table cellpadding="0" cellspacing="0" width="100%">
+                        <table
+                          cellpadding="0"
+                          cellspacing="0"
+                          width="100%"
+                          style="border-collapse: collapse"
+                        >
                           <tr>
                             <td
                               valign="top"
                               align="right"
-                              width="25%"
-                              style="padding: 8px 4px"
+                              style="padding: 8px 4px; width: 25%"
                             >
                               <img
                                 src="https://i.im.ge/2022/01/09/X1ey54.png"
                                 alt="invoice"
-                                width="32px"
+                                width="32"
+                                height="32"
+                                style="display: inline-block"
                               />
                             </td>
                             <td>
                               <span
-                                class="greenTitle"
-                                style="line-height: 18px; font-size: 12px"
+                                style="
+                                  line-height: 18px;
+                                  font-size: 12px;
+                                  color: rgb(0, 175, 65);
+                                  font-weight: bold;
+                                  text-align: left;
+                                "
                                 >quản lý hiệu quả</span
                               >
                               <br />
                               <span
-                                style="color: rgb(102, 102, 102)"
-                                class="graySubtextFooter"
+                                style="
+                                  color: rgb(102, 102, 102);
+                                  font-weight: normal;
+                                  line-height: 16px;
+                                "
                               >
                                 Đánh dấu chuyến đi của bạn là Cá Nhân hoặc Công việc trên
                                 ứng dụng Grab để quản lý hóa đơn điện tử khi đăng nhập vào
@@ -518,10 +735,23 @@
               <!-- ------------------------FOOTER-------------------- -->
               <tr>
                 <td
-                  class="horizontalPadding templateFooter"
-                  style="padding-top: 20px; padding-bottom: 30px"
+                  style="
+                    padding-top: 20px;
+                    padding-bottom: 30px;
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    color: rgb(102, 102, 102) !important;
+                    font-size: 10px;
+                    line-height: 1.5;
+                    font-family: Helvetica, sans-serif;
+                  "
                 >
-                  <table cellpadding="0" cellspacing="0" width="100%">
+                  <table
+                    cellpadding="0"
+                    cellspacing="0"
+                    width="100%"
+                    style="border-collapse: collapse"
+                  >
                     <tr>
                       <td class="mobileFlex">
                         <table
@@ -529,6 +759,7 @@
                           cellspacing="0"
                           width="100%"
                           id="helpCenter"
+                          style="border-collapse: collapse"
                         >
                           <tr>
                             <td>
@@ -536,11 +767,21 @@
                                 href="https://help.grab.com/passenger/vi-vn/"
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                style="
+                                  line-height: 12px;
+                                  font-weight: bold;
+                                  text-decoration: underline;
+                                "
                                 >Help Center</a
                               ><br /><a
                                 href="https://help.grab.com/passenger/vi-vn/articles/115005446908"
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                style="
+                                  line-height: 12px;
+                                  font-weight: bold;
+                                  text-decoration: underline;
+                                "
                               >
                                 Bạn để quên đồ trên chuyến xe này?</a
                               >
@@ -558,7 +799,12 @@
                         </table>
                       </td>
                       <td class="mobileFlex">
-                        <table cellpadding="0" cellspacing="0" width="100%">
+                        <table
+                          cellpadding="0"
+                          cellspacing="0"
+                          width="100%"
+                          style="border-collapse: collapse"
+                        >
                           <tr>
                             <td style="font-weight: bold">
                               Giữ liên lạc với chúng tôi nhé
@@ -568,19 +814,31 @@
                             <td style="width: 100%; height: 20px"></td>
                           </tr>
                           <tr>
-                            <td id="iconWrapper">
+                            <td>
                               <img
                                 src="https://i.im.ge/2022/01/09/X2Qn0z.png"
                                 alt="facebook"
+                                width="32"
+                                height="32"
+                                style="display: inline-block; padding: 4px"
                               /><img
                                 src="https://i.im.ge/2022/01/09/X2QGMF.png"
                                 alt="twitter"
+                                width="32"
+                                height="32"
+                                style="display: inline-block; padding: 4px"
                               /><img
                                 src="https://i.im.ge/2022/01/09/X2Q4g6.png"
                                 alt="instagram"
+                                width="32"
+                                height="32"
+                                style="display: inline-block; padding: 4px"
                               /><img
                                 src="https://i.im.ge/2022/01/09/X2QeDK.png"
                                 alt="linkedin"
+                                width="32"
+                                height="32"
+                                style="display: inline-block; padding: 4px"
                               />
                             </td>
                           </tr>
