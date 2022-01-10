@@ -11,8 +11,10 @@
     <title>*|MC:SUBJECT|*</title>
 
     <style type="text/css">
-      p {
-        margin: 1em 0;
+      /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap'); */
+
+      p, pre {
+        margin: 0;
         padding: 0;
       }
       table {
@@ -43,61 +45,6 @@
         padding: 20px 0;
         width: 100%;
       }
-      #outlook a {
-        padding: 0;
-      }
-      img {
-        -ms-interpolation-mode: bicubic;
-      }
-      table {
-        mso-table-lspace: 0pt;
-        mso-table-rspace: 0pt;
-      }
-      .ReadMsgBody {
-        width: 100%;
-      }
-      .ExternalClass {
-        width: 100%;
-      }
-      p,
-      a,
-      li,
-      td,
-      blockquote {
-        mso-line-height-rule: exactly;
-      }
-      a[href^="tel"],
-      a[href^="sms"] {
-        color: inherit;
-        cursor: default;
-        text-decoration: none;
-      }
-      p,
-      a,
-      li,
-      td,
-      body,
-      table,
-      blockquote {
-        -ms-text-size-adjust: 100%;
-        -webkit-text-size-adjust: 100%;
-      }
-      .ExternalClass,
-      .ExternalClass p,
-      .ExternalClass td,
-      .ExternalClass div,
-      .ExternalClass span,
-      .ExternalClass font {
-        line-height: 100%;
-      }
-      a[x-apple-data-detectors] {
-        color: inherit !important;
-        text-decoration: none !important;
-        font-size: inherit !important;
-        font-family: inherit !important;
-        font-weight: inherit !important;
-        line-height: inherit !important;
-      }
       /* ---------------------------- */
       .templateImage {
         height: auto;
@@ -107,7 +54,8 @@
         border: 1px solid rgb(237, 237, 237) !important;
       }
       body,
-      #bodyTable, pre {
+      #bodyTable,
+      pre {
         background-color: white;
         font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
       }
@@ -172,6 +120,7 @@
       }
       .dishNameWrapper {
         width: 67%;
+        line-height: 18px;
       }
       .billTitle {
         color: rgb(158, 158, 158);
@@ -398,12 +347,13 @@
                                 style="
                                   border: 1px solid rgb(221, 221, 221);
                                   background-color: white;
-                                  line-height: 2;
+                                  line-height: 1.5;
                                 "
                               >
                                 <tr>
-                                  <td style="padding-bottom: 3px">
-                                    Bạn trả bằng: <br />
+                                  <td style="padding-bottom: 10px">
+                                    Bạn trả bằng: 
+                                    <br />
                                     <span class="billInfo">Visa 8959</span>
                                   </td>
                                 </tr>
@@ -415,7 +365,10 @@
                                         <td class="billTitle">Số lượng:</td>
                                       </tr>
                                       <tr class="dashedBorder">
-                                        <td class="dishNameWrapper">
+                                        <td
+                                          class="dishNameWrapper"
+                                          style="padding-top: 5px"
+                                        >
                                           1x
                                           <span class="billInfo"
                                             >Combo 4 : Cháo sườn thập cẩm (bò viên, trứng
@@ -474,13 +427,12 @@
                                       <tr class="dashedBorder">
                                         <td
                                           class="dishNameWrapper totalBill"
-                                          style="padding: 10px 10px 0 0"
                                           align="right"
                                         >
                                           BẠN TRẢ
                                         </td>
-                                        <td style="padding-top: 10px" class="totalBill">
-                                          VND 71000
+                                        <td class="totalBill">
+                                          <pre>  VND 71000</pre>
                                         </td>
                                       </tr>
                                     </table>
@@ -547,10 +499,14 @@
                                 >quản lý hiệu quả</span
                               >
                               <br />
-                              <span style="color: rgb(102, 102, 102)" class="graySubtextFooter">
+                              <span
+                                style="color: rgb(102, 102, 102)"
+                                class="graySubtextFooter"
+                              >
                                 Đánh dấu chuyến đi của bạn là Cá Nhân hoặc Công việc trên
                                 ứng dụng Grab để quản lý hóa đơn điện tử khi đăng nhập vào
-                                <span>grab.com/work</span></span>
+                                <span>grab.com/work</span></span
+                              >
                             </td>
                           </tr>
                         </table>
