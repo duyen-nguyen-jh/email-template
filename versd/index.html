@@ -7,73 +7,6 @@
     <title>*|MC:SUBJECT|*</title>
 
     <style type="text/css">
-      p,
-      pre {
-        margin: 0;
-        padding: 0;
-      }
-      table {
-        border-collapse: collapse;
-      }
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        display: block;
-        margin: 0;
-        padding: 0;
-      }
-      img {
-        border: 0;
-        height: auto;
-        outline: none;
-        text-decoration: none;
-      }
-      body,
-      pre {
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      a {
-        text-decoration: underline;
-      }
-      /* ---------------------------- */
-      #containerCell {
-        padding: 40px 0;
-      }
-      #containerWrapperTable {
-        width: 100%;
-        max-width: 550px;
-        border: 1px solid #979797;
-      }
-      #containerWrapper {
-        padding: 68px 50px;
-      }
-      .topicWrapper {
-        background-image: url("https://i.im.ge/2022/01/10/X2Sfwc.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 30%;
-        height: 105px;
-        color: white;
-        font-family: Anton;
-        font-size: 19px;
-        padding-left: 10px;
-      }
-      .topicWrapper .number {
-        font-size: 25px;
-        padding-left: 30px;
-      }
-      .topic {
-        padding-bottom: 10px;
-      }
-      .antonTitle {
-        font-family: Anton;
-      }
-      .billHeader {
-        font-weight: bold;
-      }
       /* ----------------------------- */
       @media only screen and (max-width: 375px) {
         body,
@@ -121,11 +54,27 @@
       width="100%"
     >
       <tr>
-        <td align="center" valign="top" id="containerCell">
-          <table cellpadding="0" cellspacing="0" width="100%" id="containerWrapperTable">
+        <td align="center" valign="top" style="padding: 40px 0">
+          <table
+            cellpadding="0"
+            cellspacing="0"
+            width="100%"
+            id="containerWrapperTable"
+            style="
+              border-collapse: collapse;
+              width: 100%;
+              max-width: 550px;
+              border: 1px solid #979797;
+            "
+          >
             <tr>
-              <td id="containerWrapper">
-                <table cellpadding="0" cellspacing="0" width="100%">
+              <td id="containerWrapper" style="padding: 68px 50px">
+                <table
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="100%"
+                  style="border-collapse: collapse"
+                >
                   <!-- --------------------LOGO---------------------------------- -->
                   <tr>
                     <td align="center" width="100%">
@@ -139,7 +88,12 @@
                   <!-- --------------------HERO---------------------------------- -->
                   <tr>
                     <td style="padding: 68px 0 10px 0">
-                      <table cellpadding="0" cellspacing="0" width="100%">
+                      <table
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                        style="border-collapse: collapse"
+                      >
                         <tr>
                           <td valign="top">
                             <img
@@ -153,7 +107,9 @@
                           <td align="right" style="font-style: italic">
                             <span
                               style="
-                                font-family: Roboto, Helvetica, sans-serif;
+                                font-family: 'SF Pro Text', -apple-system,
+                                  BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+                                  Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                                 font-size: 16px;
                                 font-weight: bold;
                               "
@@ -167,59 +123,137 @@
                   <!-- --------------------BODY---------------------------------- -->
                   <tr>
                     <td>
-                      <table cellpadding="10" cellspacing="0" width="100%">
+                      <table
+                        cellpadding="10"
+                        cellspacing="0"
+                        width="100%"
+                        style="border-collapse: collapse"
+                      >
                         <tr>
                           <td
                             align="center"
-                            style="color: #ffc95d; font-size: 22px"
-                            class="antonTitle"
+                            style="color: #ffc95d; font-size: 22px; font-family: Anton"
                           >
                             BE YOURSELF, IT PAYS OFF!
                           </td>
                         </tr>
                         <tr>
-                          <td align="center" style="font-size: 20px" class="antonTitle">
+                          <td align="center" style="font-size: 20px; font-family: Anton">
                             Thanks for being an inspiration to others
                           </td>
                         </tr>
                         <tr>
                           <td
                             align="center"
-                            style="
-                              font-size: 18px;
-                              line-height: 1.5;
-                              font-weight: lighter;
-                            "
+                            style="font-size: 18px; font-weight: lighter; line-height: 0"
                           >
                             <table
                               cellpadding="0"
                               cellspacing="0"
                               width="72%"
                               id="billTable"
+                              style="
+                                border-collapse: collapse;
+                                font-family: 'SF Pro Text', -apple-system,
+                                  BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+                                  Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                              "
                             >
-                              <tr style="border-bottom: 1px solid #707070">
-                                <td class="billHeader">Total payout</td>
-                                <td class="billHeader"><pre>  $75</pre></td>
+                              <tr>
+                                <td style="font-weight: bold">Total payout</td>
+                                <td style="font-weight: bold">
+                                  <pre
+                                    style="
+                                      padding: 0;
+                                      font-family: 'SF Pro Text', -apple-system,
+                                        BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+                                        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+                                        sans-serif;
+                                    "
+                                  >
+  $75</pre
+                                  >
+                                </td>
                               </tr>
                               <tr>
                                 <td style="padding-top: 5px">Number of sessions</td>
-                                <td style="padding-top: 5px"><pre>  3</pre></td>
+                                <td style="padding-top: 5px">
+                                  <pre
+                                    style="
+                                      padding: 0;
+                                      font-family: 'SF Pro Text', -apple-system,
+                                        BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+                                        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+                                        sans-serif;
+                                    "
+                                  >
+  3</pre
+                                  >
+                                </td>
                               </tr>
                               <tr>
                                 <td>Average price</td>
-                                <td><pre>  $15</pre></td>
+                                <td>
+                                  <pre
+                                    style="
+                                      padding: 0;
+                                      font-family: 'SF Pro Text', -apple-system,
+                                        BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+                                        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+                                        sans-serif;
+                                    "
+                                  >
+  $15</pre
+                                  >
+                                </td>
                               </tr>
                               <tr>
                                 <td>Average turnout</td>
-                                <td><pre>  5</pre></td>
+                                <td>
+                                  <pre
+                                    style="
+                                      padding: 0;
+                                      font-family: 'SF Pro Text', -apple-system,
+                                        BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+                                        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+                                        sans-serif;
+                                    "
+                                  >
+  5</pre
+                                  >
+                                </td>
                               </tr>
                               <tr>
                                 <td>Tax</td>
-                                <td><pre>- $75</pre></td>
+                                <td>
+                                  <pre
+                                    style="
+                                      padding: 0;
+                                      font-family: 'SF Pro Text', -apple-system,
+                                        BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+                                        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+                                        sans-serif;
+                                    "
+                                  >
+- $75</pre
+                                  >
+                                </td>
                               </tr>
                               <tr>
                                 <td>VERSD fee</td>
-                                <td><pre>- $75</pre></td>
+                                <td>
+                                  <pre
+                                    style="
+                                      padding: 0;
+                                      font-family: 'SF Pro Text', -apple-system,
+                                        BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+                                        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+                                        sans-serif;
+                                    "
+                                  >
+- $75</pre
+                                  >
+                                </td>
                               </tr>
                             </table>
                           </td>
@@ -230,35 +264,133 @@
 
                   <tr>
                     <td align="center" style="padding: 22px 0">
-                      <table cellpadding="0" cellspacing="0" width="100%">
+                      <table
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                        style="border-collapse: collapse"
+                      >
                         <tr>
-                          <td class="topicWrapper" valign="bottom">
-                            <table cellpadding="0" cellspacing="0" width="100%">
+                          <td
+                            class="topicWrapper"
+                            valign="bottom"
+                            style="
+                              background-repeat: no-repeat;
+                              background-image: url(https://i.im.ge/2022/01/10/X2Sfwc.png);
+                              background-size: contain;
+                              width: 30%;
+                              height: 105px;
+                              font-size: 19px;
+                              padding-left: 10px;
+                            "
+                          >
+                            <table
+                              cellpadding="0"
+                              cellspacing="0"
+                              width="100%"
+                              style="font-family: Anton; color: white"
+                            >
                               <tr>
-                                <td class="number">x3</td>
+                                <td
+                                  class="number"
+                                  style="
+                                    font-size: 25px;
+                                    padding-left: 30px;
+                                    font-family: Anton;
+                                  "
+                                >
+                                  x3
+                                </td>
                               </tr>
                               <tr>
-                                <td class="topic">TRICKING</td>
+                                <td style="padding-bottom: 10px; font-family: Anton">
+                                  TRICKING
+                                </td>
                               </tr>
                             </table>
                           </td>
-                          <td class="topicWrapper" valign="bottom">
-                            <table cellpadding="0" cellspacing="0" width="100%">
+                          <td
+                            class="topicWrapper"
+                            valign="bottom"
+                            style="
+                              background-repeat: no-repeat;
+                              background-image: url(https://i.im.ge/2022/01/10/X2Sfwc.png);
+                              background-size: contain;
+                              width: 30%;
+                              height: 105px;
+                              color: white;
+                              font-size: 19px;
+                              padding-left: 10px;
+                            "
+                          >
+                            <table
+                              cellpadding="0"
+                              cellspacing="0"
+                              width="100%"
+                              style="font-family: Anton; color: white"
+                            >
                               <tr>
-                                <td class="number">x10</td>
+                                <td
+                                  class="number"
+                                  style="
+                                    font-size: 25px;
+                                    padding-left: 30px;
+                                    font-family: Anton;
+                                  "
+                                >
+                                  x10
+                                </td>
                               </tr>
                               <tr>
-                                <td class="topic">BOXING</td>
+                                <td
+                                  class="topic"
+                                  style="padding-bottom: 10px; font-family: Anton"
+                                >
+                                  BOXING
+                                </td>
                               </tr>
                             </table>
                           </td>
-                          <td class="topicWrapper" valign="bottom">
-                            <table cellpadding="0" cellspacing="0" width="100%">
+                          <td
+                            class="topicWrapper"
+                            valign="bottom"
+                            style="
+                              background-repeat: no-repeat;
+                              background-image: url(https://i.im.ge/2022/01/10/X2Sfwc.png);
+                              background-size: contain;
+                              width: 30%;
+                              height: 105px;
+                              color: white;
+                              font-size: 19px;
+                              padding-left: 10px;
+                            "
+                          >
+                            <table
+                              cellpadding="0"
+                              cellspacing="0"
+                              width="100%"
+                              style="font-family: Anton; color: white"
+                            >
                               <tr>
-                                <td class="number">x1</td>
+                                <td
+                                  class="number"
+                                  style="
+                                    font-size: 25px;
+                                    padding-left: 30px;
+                                    font-family: Anton;
+                                    color: white;
+                                  "
+                                >
+                                  x1
+                                </td>
                               </tr>
                               <tr>
-                                <td class="topic">DANCE</td>
+                                <td
+                                  class="topic"
+                                  style="padding-bottom: 10px; color: white; font-family: Anton"
+                                >
+                                  DANCE
+                                </td>
                               </tr>
                             </table>
                           </td>
@@ -267,7 +399,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td style="font-size: 20px; font-weight: normal" class="antonTitle">
+                    <td style="font-size: 20px; font-weight: normal; font-family: Anton">
                       Your students thank you!
                     </td>
                   </tr>
@@ -281,8 +413,11 @@
                 width="100%"
                 style="background-color: #e5e6e7; font-size: 14px; padding: 20px 0"
               >
-                <a>Contact us</a>
-                <p>Visit us at <a>www.versd.co</a></p>
+                <a style="text-decoration: underline">Contact us</a>
+                <p>
+                  Visit us at
+                  <a style="text-decoration: underline; color: black">www.versd.co</a>
+                </p>
                 <p>Versd Technologies Inc.</p>
               </td>
             </tr>
