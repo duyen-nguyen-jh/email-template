@@ -55,9 +55,9 @@ let decisionTree = [
     parentId: 3,
   },
 ];
+
 function getParentTitle(parentId) {
   const foundNode = decisionTree.find((node) => node.id === parentId);
-  console.log({ foundNode });
   return foundNode ? foundNode.content : `Sunday plan`;
 }
 
@@ -184,7 +184,6 @@ function onEditItem(editId, oldContent, parentId) {
       : node
   );
   decisionTree = [...newTree];
-  console.log(decisionTree);
   clearOldList();
   renderList(newTree.filter((node) => node.parentId === parentId));
 }
