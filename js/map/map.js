@@ -172,50 +172,59 @@ function handleClickSuggestItemDestination(element, listSuggest) {
 }
 
 function drawPolyline(origin, destination) {
-  fetch(
-    `${MAPBOX_GET_DIRECTION_API}/${origin.center};${destination.center}?steps=true&geometries=geojson&access_token=${mapboxgl.accessToken}`,
-    { method: "GET" }
-  )
-    .then((res) => res.json())
-    .then((data) => {
-      if (data.code !== "Ok") {
-        alert("Cannot find direction");
-        map.getSource("route").setData([]);
-        return;
-      }
-      const coordinates = data.routes[0].geometry.coordinates;
-      const geojson = {
-        type: "Feature",
-        properties: {},
-        geometry: {
-          type: "LineString",
-          coordinates: coordinates,
-        },
-      };
-      // if the route already exists on the map, we'll reset it using setData
-      if (map.getSource("route")) {
-        map.getSource("route").setData(geojson);
-      }
-      // otherwise, we'll make a new request
-      else {
-        map.addLayer({
-          id: "route",
-          type: "line",
-          source: {
-            type: "geojson",
-            data: geojson,
+  if (origin && destination) {
+    fetch(
+      `${MAPBOX_GET_DIRECTION_API}/${origin.center};${destination.center}?steps=true&geometries=geojson&access_token=${mapboxgl.accessToken}`,
+      { method: "GET" }
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.code !== "Ok") {
+          alert("Cannot find direction");
+          map.getSource("route").setData({
+            type: "Feature",
+            properties: {},
+            geometry: {
+              type: "LineString",
+              coordinates: [],
+            },
+          });
+          return;
+        }
+        const coordinates = data.routes[0].geometry.coordinates;
+        const geojson = {
+          type: "Feature",
+          properties: {},
+          geometry: {
+            type: "LineString",
+            coordinates: coordinates,
           },
-          layout: {
-            "line-join": "round",
-            "line-cap": "round",
-          },
-          paint: {
-            "line-color": "#3887be",
-            "line-width": 5,
-            "line-opacity": 0.75,
-          },
-        });
-      }
-    })
-    .catch((e) => console.log(e));
+        };
+        // if the route already exists on the map, we'll reset it using setData
+        if (map.getSource("route")) {
+          map.getSource("route").setData(geojson);
+        }
+        // otherwise, we'll make a new request
+        else {
+          map.addLayer({
+            id: "route",
+            type: "line",
+            source: {
+              type: "geojson",
+              data: geojson,
+            },
+            layout: {
+              "line-join": "round",
+              "line-cap": "round",
+            },
+            paint: {
+              "line-color": "#3887be",
+              "line-width": 5,
+              "line-opacity": 0.75,
+            },
+          });
+        }
+      })
+      .catch((e) => console.log(e));
+  }
 }
