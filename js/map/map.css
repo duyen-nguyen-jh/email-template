@@ -1,0 +1,64 @@
+#placeSelector {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  width: 30%;
+}
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+.inputWrapper {
+  display: flex;
+  position: relative;
+}
+
+.title {
+  width: 40px;
+  height: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#start {
+  background-color: #8a8acb;
+}
+#end {
+  background-color: #3bb2d0;
+}
+.listSuggestion {
+  display: none;
+}
+
+.listSuggestion {
+  position: absolute;
+  background-color: white;
+  top: 40px;
+  left: 37px;
+  margin: 0;
+  padding-left: 0;
+  width: calc(100% - 38px);
+  box-sizing: border-box;
+
+  border-radius: 0 0 2px 2px;
+  z-index: 2;
+}
+
+.listSuggestion li {
+  height: 35px;
+  list-style-type: none;
+  line-height: 3;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 10px;
+}
+.listSuggestion li:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+.listSuggestion li:first-child {
+  background-color: #eee;
+}

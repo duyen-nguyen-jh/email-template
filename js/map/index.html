@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapbox Exercise</title>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./map.css" />
+  </head>
+  <body style="margin: 0; overflow: hidden">
+    <div id="map" style="width: 100vw; height: 100vh">
+      <div id="placeSelector">
+        <div class="inputWrapper">
+          <div class="title" id="start">Start</div>
+          <input
+            type="text"
+            class="inputPlace"
+            placeholder="Select origin"
+            oninput="getGeoInputOrigin()"
+            id="inputStart"
+          />
+          <ul class="listSuggestion" id="originList">
+          </ul>
+        </div>
+        <div class="inputWrapper">
+          <div class="title" id="end">End</div>
+          <input
+            type="text"
+            class="inputPlace"
+            placeholder="Select destination"
+            oninput="getGeoInputDestination()"
+            id="inputEnd"
+          />
+          <ul class="listSuggestion" id="desList">
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="./map.js"></script>
+  </body>
+</html>
