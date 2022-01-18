@@ -29,11 +29,9 @@ map.addControl(
 navigator.geolocation.getCurrentPosition(
   (data) => {
     const { coords } = data;
-    new mapboxgl.Map({
-      container: "map",
-      style: "mapbox://styles/mapbox/streets-v11",
-      zoom: 18,
+    map.flyTo({
       center: [coords.longitude, coords.latitude],
+      essential: true,
     });
   },
   (e) => alert("Have error when get current location")
@@ -238,5 +236,23 @@ function drawPolyline(origin, destination) {
         }
       })
       .catch((e) => console.log(e));
+  }
+}
+
+function onClearMap() {
+  document.getElementById("inputStart").value = "";
+  document.getElementById("inputEnd").value = "";
+  clearAllOldMarker(oldOriginMarkers);
+  clearAllOldMarker(oldDestinationMarkers);
+
+  if (map.getSource("route")) {
+    map.getSource("route").setData({
+      type: "Feature",
+      properties: {},
+      geometry: {
+        type: "LineString",
+        coordinates: [],
+      },
+    });
   }
 }
