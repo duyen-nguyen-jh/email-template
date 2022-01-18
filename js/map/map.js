@@ -79,7 +79,9 @@ function addMarkerOnMap(position, oldList, isOrigin) {
   });
 }
 
-function getGeoInputOrigin() {
+function getGeoInputOrigin(a, b, c) {
+  console.log("in func", a, b, c);
+
   const originText = document.getElementById("inputStart").value;
   const listSuggest = document.getElementById("originList");
 
@@ -155,6 +157,10 @@ function getGeoInputDestination() {
   }
 }
 
+const deboucedGetOrigin = debounce(function () {
+  getGeoInputOrigin(1, 2, 3);
+}, 1500);
+const deboucedGetDestination = debounce(getGeoInputDestination, 1500);
 function handleClickSuggestItemOrigin(element, listSuggest) {
   clearAllOldMarker(oldOriginMarkers);
 
@@ -255,4 +261,16 @@ function onClearMap() {
       },
     });
   }
+}
+
+function debounce(func, timeStop) {
+  let timeOut;
+  return function () {
+    let context = this;
+    let params = arguments;
+    clearTimeout(timeOut);
+    timeOut = setTimeout(() => {
+      func.apply(context, params);
+    }, timeStop);
+  };
 }

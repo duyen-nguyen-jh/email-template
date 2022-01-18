@@ -22,12 +22,10 @@
             type="text"
             class="inputPlace"
             placeholder="Select origin"
-            oninput="getGeoInputOrigin()"
+            oninput="deboucedGetOrigin()"
             id="inputStart"
           />
-          <ul class="listSuggestion" id="originList">
-          </ul>
-          <button style="width:80px; height: 40px;" onclick="onClearMap()">Clear</butt>
+          <ul class="listSuggestion" id="originList"></ul>
         </div>
         <div class="inputWrapper">
           <div class="title" id="end">End</div>
@@ -35,13 +33,24 @@
             type="text"
             class="inputPlace"
             placeholder="Select destination"
-            oninput="getGeoInputDestination()"
+            oninput="deboucedGetDestination()"
             id="inputEnd"
           />
-          <ul class="listSuggestion" id="desList">
-          </ul>
-          <button style="width:80px; height: 40px;" onclick="onClearMap()">Clear</button>
+          <ul class="listSuggestion" id="desList"></ul>
         </div>
+        <button
+          style="
+            width: 80px;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            right: -100px;
+            z-index: 1;
+          "
+          onclick="onClearMap()"
+        >
+          Clear
+        </button>
       </div>
     </div>
     <script src="./map.js"></script>
