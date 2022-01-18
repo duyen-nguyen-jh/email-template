@@ -26,6 +26,18 @@ map.addControl(
   })
 );
 
+navigator.geolocation.getCurrentPosition(
+  (data) => {
+    const { coords } = data;
+    new mapboxgl.Map({
+      container: "map",
+      style: "mapbox://styles/mapbox/streets-v11",
+      zoom: 18,
+      center: [coords.longitude, coords.latitude],
+    });
+  },
+  (e) => alert("Have error when get current location")
+);
 function clearOldList(list) {
   while (list.childNodes[0]) {
     list.removeChild(list.childNodes[0]);
